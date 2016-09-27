@@ -1,4 +1,4 @@
-# Super-simple, super-fast Hebbian learning of nice V1-like receptive fields
+# Super-simple, super-fast Hebbian learning of V1-like receptive fields
 # Only takes a couple seconds
 # Even nicer/smoother RFs if you run for longer with a smaller ETA
 # Uses the Instar Hebbian rule, softmax competition, and adaptive thresholds to drive firing rates towards 1/NBCELLS (note that actual firing rates vary quite a lot!)
