@@ -3,7 +3,7 @@ This code implements super-simple, super-fast Hebbian learning of nice V1-like s
 25 lines of Python, runs in a couple seconds (though the RF look even smoother if you run it for longer with a smaller learning rate).
 
 
-This code uses the "instar" Hebbian rule (see e.g. [http://cns-pc62.bu.edu/cn510/Papers/stability.pdf](Vasilkoski et al. IJCNN 2011)), SoftMax competition between output cells, and adaptive thresholds to drive firing rates towards 1/NBCELLS (though the actual firing rates vary quite a lot).
+This code uses the "instar" Hebbian rule (see e.g. [Vasilkoski et al. IJCNN 2011](http://cns-pc62.bu.edu/cn510/Papers/stability.pdf)), SoftMax competition between output cells, and adaptive thresholds to drive firing rates towards 1/NBCELLS (though the actual firing rates vary quite a lot).
 
 
 The resulting firing is sparse, and most often only one cell fires. But sometimes several cells have significant firing (rarely more than 3 though). 
