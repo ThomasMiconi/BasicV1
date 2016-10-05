@@ -1,10 +1,12 @@
 # Super-simple, super-fast Hebbian learning of V1-like receptive fields
-# Only takes a couple seconds
+# Runs in a couple seconds (run it for longer, possibly with lower ETA, to get slightly smoother RFs).
 # Even nicer/smoother RFs if you run for longer with a smaller ETA
 # Uses the Instar Hebbian rule, softmax competition, and adaptive thresholds to drive firing rates towards 1/NBCELLS (note that actual firing rates vary quite a lot!)
 # Resulting firing is sparse, and often only once cell fires, but sometimes several cells have significant firing (rarely more than 3 though). 
 # Requires patches of z-scored natural images as inputs, stored as linearized vectors in patches.npy (see makepatches.py)
 # To plot the resulting RFs, run plotRFs.py
+
+# Suggestion: run the code with ETA = 3e-4, 1 million cycles for somewhat smoother RFs.
 
 import numpy as np
 np.set_printoptions(precision=4, suppress=True)

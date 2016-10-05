@@ -17,6 +17,7 @@ for nn in range(NBCELLS):
     ax.set_axis_off()
 
 plt.draw()
+plt.savefig('RFs.png', bbox_inches='tight')
 
 
 
